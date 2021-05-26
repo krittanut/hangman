@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sDmG7DwaQP9PyYScgD0W1qUTncdYIEYF5kbI3fgYw6Qs1MIletigeg6+jtlfugDo4J19wbxwEuFsziIuv8pgOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JeNe\\hangman\\hangman_command\\hangman_command.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JeNe\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

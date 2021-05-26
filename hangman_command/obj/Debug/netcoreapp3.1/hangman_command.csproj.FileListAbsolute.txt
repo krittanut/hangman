@@ -1,0 +1,15 @@
+C:\Users\JeNe\hangman\hangman_command\bin\Debug\netcoreapp3.1\hangman_command.exe
+C:\Users\JeNe\hangman\hangman_command\bin\Debug\netcoreapp3.1\hangman_command.deps.json
+C:\Users\JeNe\hangman\hangman_command\bin\Debug\netcoreapp3.1\hangman_command.runtimeconfig.json
+C:\Users\JeNe\hangman\hangman_command\bin\Debug\netcoreapp3.1\hangman_command.runtimeconfig.dev.json
+C:\Users\JeNe\hangman\hangman_command\bin\Debug\netcoreapp3.1\hangman_command.dll
+C:\Users\JeNe\hangman\hangman_command\bin\Debug\netcoreapp3.1\hangman_command.pdb
+C:\Users\JeNe\hangman\hangman_command\obj\Debug\netcoreapp3.1\hangman_command.csprojAssemblyReference.cache
+C:\Users\JeNe\hangman\hangman_command\obj\Debug\netcoreapp3.1\hangman_command.AssemblyInfoInputs.cache
+C:\Users\JeNe\hangman\hangman_command\obj\Debug\netcoreapp3.1\hangman_command.AssemblyInfo.cs
+C:\Users\JeNe\hangman\hangman_command\obj\Debug\netcoreapp3.1\hangman_command.dll
+C:\Users\JeNe\hangman\hangman_command\obj\Debug\netcoreapp3.1\hangman_command.pdb
+C:\Users\JeNe\hangman\hangman_command\obj\Debug\netcoreapp3.1\hangman_command.genruntimeconfig.cache
+C:\Users\JeNe\hangman\hangman_command\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\JeNe\hangman\hangman_command\obj\Debug\netcoreapp3.1\hangman_command.csproj.CoreCompileInputs.cache
+C:\Users\JeNe\hangman\hangman_command\obj\Debug\netcoreapp3.1\hangman_command.csproj.CopyComplete
