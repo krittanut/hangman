@@ -14,6 +14,7 @@ namespace hangman_command
 
         static async System.Threading.Tasks.Task Main(string[] args)
         {
+            apikey apikey = new apikey(); 
             Program program = new Program();
             Console.WriteLine("Hello World!");
             var client = new HttpClient();
@@ -23,8 +24,8 @@ namespace hangman_command
                 RequestUri = new Uri("https://wordsapiv1.p.rapidapi.com/words/?random=true"),
                 Headers =
     {
-        { "x-rapidapi-key", "a37fa69ea8msh5c36963a85610f4p10bf8bjsn757b6a4baa2e" },
-        { "x-rapidapi-host", "wordsapiv1.p.rapidapi.com" },
+        { "x-rapidapi-key", apikey.key },
+        { "x-rapidapi-host", apikey.host },
     },
             };
             using (var response = await client.SendAsync(request))
@@ -34,24 +35,43 @@ namespace hangman_command
                 while (n <= 5)
                 {
                     n++;
+                    Console.WriteLine(n);
                     response.EnsureSuccessStatusCode();
                     var body = await response.Content.ReadAsStringAsync();
                     Console.WriteLine(body);
                     Console.WriteLine(body.GetType());
                     JObject json = JObject.Parse(body);
                     Console.WriteLine($"This is Key : {json.ContainsKey("results")}");
-                    Console.WriteLine(json["word"]);
+                    Console.WriteLine(json["word"].ToString());
+                    //if (json["word"].ToString().Split() > )
+                    string word_ = json["word"].ToString();
+                    string[] WordOneGram = word_.Split(" ");
+                    if (WordOneGram.Length == 1 )
+                    {
+                        Console.WriteLine("Found One-gram ");
+                       
+                    }
+                    else
+                    {
+                        Console.WriteLine("Not Found One-gram");
+                        
+                    }
+                    Console.WriteLine($"This is word replace : {word_.Replace(word_, "_")}");
+                    Console.WriteLine($"This is word : {word_}");
+                   
+                    Console.WriteLine($"This is leht of word : {WordOneGram.Length}");
+
                     // JObject result = JObject.Parse(json["results"].ToString());
                     //Console.WriteLine(json["results"][0]);
                     //JObject result = JObject.Parse(json["results"][0].ToString());
                     // Console.WriteLine(result["definition"]);
 
                     //Console.WriteLine(json["results"].ToString());
-                    program.Hangstring(5);
-                    foreach (var e in json)
+                    //program.Hangstring(5);
+                    /*foreach (var e in json)
                     {
                         Console.WriteLine(e);
-                    }
+                    }*/
                 }
               
             }
